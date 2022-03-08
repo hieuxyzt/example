@@ -17,7 +17,7 @@
 
 <html>
 <head>
-    <script src="http://localhost:8080/js/keycloak.js"></script>
+    <script src="http://10.0.8.110:8080/js/keycloak.js"></script>
 </head>
 <body>
 
@@ -71,9 +71,9 @@
         req.onreadystatechange = function () {
             if (req.readyState == 4) {
                 if (req.status == 200) {
-                    output('Success');
-                } else {
                     output('Failed');
+                } else {
+                    output('Success');
                 }
             }
         }
